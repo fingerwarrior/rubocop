@@ -1,0 +1,6 @@
+ruby_version: ruby-1.9.3-p194
+hooks:
+  pre_setup: "gem update --remote bundler && gem update --remote bundler"        # Runs before database setup
+tests:
+	- bundle exec rspec
+  	- bundle exec rubocop
